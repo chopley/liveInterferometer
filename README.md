@@ -1,7 +1,7 @@
 liveInterferometer
 ==================
 
-README Document for the webcam interactive interferometer
+#README Document for the webcam interactive interferometer
 -----------------------------------------------------------------
 Created: 26.2.14
 Updated: 26.2.14
@@ -17,7 +17,7 @@ test sky image: such as astro_test_image.jpg
 
 The code is in the directory: /home/griffin/Downloads/interactiveInterferometer
 
-To Run:
+##To Run:
 -----------------------------------------------------------------
 1. before plugging in the webcam, run:
 
@@ -36,7 +36,7 @@ For script help run: python gen_psf_interferometer_detect_skyim.py -h
 To run the script with the webcam ID and test sky image: python gen_psf_interferometer_detect_skyim.py -c 1 -i /home/griffin/Downloads/interactiveInterferometer/astro_test_image.jpg
 
 
-Changing Settings:
+##Changing Settings:
 -----------------------------------------------------------------
 A few parameters can be altered.
 
@@ -53,6 +53,9 @@ Interferometer Live Demo Using Open CV image detection
 
 #Edge Detection
 
-To run the script with the webcam ID and test sky image: python gen_psf_interferometer_detect_skyimCJC.py -c 1 -i /home/griffin/Downloads/interactiveInterferometer/astro_test_image.jpg
+The code can also be run in edge detection mode.
 
 When run in the edge detection mode the code does not use HoughCircles but rather the cv2.Canny algorithm for edge detection. Countours are then used to find the centroid of the contour and hence the location of the points. This algorithm allows you to do things like draw stations on a piece of paper.
+
+To run the script with the webcam ID and test sky image: python gen_psf_interferometer_detect_skyimCJC.py -c 1 -i /home/griffin/Downloads/interactiveInterferometer/astro_test_image.jpg
+
