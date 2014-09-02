@@ -7,9 +7,15 @@ Created: 26.2.14
 Updated: 26.2.14
 
 Required Equipment:
--extrenal USB webcam
--coins or small round objects
--flat, light colored area (A3 or A2 paper)
+1. extrenal USB webcam
+
+In the circle detection script mode you require
+a. coins or small round objects
+b. flat, light colored area (A3 or A2 paper)
+
+In the edge detection mode you can draw the stations on a piece of white paper using a black marker
+
+
 
 Software:
 python script: gen_psf_interferometer_detect_skyim.py
